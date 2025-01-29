@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { model, Schema } from "mongoose";
 import { IBusiness, IBusiness_location, IBusiness_media, IBusiness_service } from "./business_types";
 
 const business_service_schema = new Schema<IBusiness_service>({
@@ -141,3 +141,5 @@ const business_schema = new Schema<IBusiness>({
     },
 
 })
+
+export const business_model = model<IBusiness>('business', business_schema);
