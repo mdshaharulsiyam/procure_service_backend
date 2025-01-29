@@ -5,12 +5,11 @@ const service_schema = new Schema<IService>({
     name: {
         type: String,
         required: [true, 'name is required'],
-        trim: true
+        unique: true,
     },
     img: {
         type: String,
         required: [true, 'img is required'],
-        trim: true
     },
     category: {
         type: Schema.Types.ObjectId,
