@@ -97,7 +97,8 @@ const business_schema = new Schema<IBusiness>({
     },
     auth: {
         type: Schema.Types.ObjectId,
-        required: [true, 'auth id is required']
+        required: [true, 'auth id is required'],
+        ref: 'auth'
     },
     business_phone_no: {
         type: String,
