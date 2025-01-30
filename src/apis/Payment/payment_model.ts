@@ -35,6 +35,6 @@ const payment_schema = new Schema<IPayment>({
         default: 'CARD',
         enum: ['CARD']
     }
-})
+}, { timestamps: true });
 
 export const payment_model = model<IPayment>('payment', payment_schema);

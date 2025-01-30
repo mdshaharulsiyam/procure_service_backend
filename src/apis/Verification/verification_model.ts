@@ -16,7 +16,7 @@ const verification_schema = new Schema<IVerification>({
         required: [true, 'code is required'],
     },
 
-});
+}, { timestamps: true });
 verification_schema.pre('save', async function (next) {
     try {
         this.code = Math.round(100000 + Math.random() * 900000).toString();

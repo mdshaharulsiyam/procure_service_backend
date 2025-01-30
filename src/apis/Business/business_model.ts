@@ -141,6 +141,6 @@ const business_schema = new Schema<IBusiness>({
         ]
     },
 
-})
+}, { timestamps: true });
 
 export const business_model = model<IBusiness>('business', business_schema);

@@ -25,4 +25,4 @@ const purchase_schema = new Schema<IPurchase>({
         enum: ['open', 'connected', 'closed'],
         default: 'open'
     }
-})
+}, { timestamps: true });

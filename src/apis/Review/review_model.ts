@@ -60,6 +60,6 @@ const review_schema = new Schema<IReview>({
         type: Boolean,
         default: false
     }
-})
+}, { timestamps: true });
 
 export const review_model = model<IReview>('review', review_schema);
