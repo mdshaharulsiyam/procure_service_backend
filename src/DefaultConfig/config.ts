@@ -20,9 +20,6 @@ const config = Object.freeze({
     MAID: ['ADMIN', 'SUPER_ADMIN', "MAID"],
     USER: ['ADMIN', 'SUPER_ADMIN', "MAID", 'USER'],
     WEEK: ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'],
-    PERCENTAGE: process.env.PERCENTAGE || 0,
-    MRMD_PERCENTAGE: process.env.MRMD_PERCENTAGE || 0,
-    MRMD_VALUE_PER_DOLLAR: process.env.MRMD_VALUE_PER_DOLLAR,
     SeedAdminEmail: process.env.SeedAdminEmail || '',
     SeedAdminPassword: process.env.SeedAdminPassword || '',
     SUBSCRIPTION_PRICE: process.env.SUBSCRIPTION_PRICE || ''
