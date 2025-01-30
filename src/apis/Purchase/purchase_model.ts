@@ -5,12 +5,12 @@ const purchase_schema = new Schema<IPurchase>({
     user: {
         type: Schema.Types.ObjectId,
         ref: 'user',
-        required: true
+        required: [true, 'user id is required']
     },
     issue: {
         type: Schema.Types.ObjectId,
         ref: 'issue',
-        required: true
+        required: [true, 'issue id is required']
     },
     is_reviewed: {
         type: Boolean,
@@ -20,4 +20,9 @@ const purchase_schema = new Schema<IPurchase>({
         type: Boolean,
         default: false
     },
+    status: {
+        type: String,
+        enum: ['open', 'connected', 'closed'],
+        default: 'open'
+    }
 })
