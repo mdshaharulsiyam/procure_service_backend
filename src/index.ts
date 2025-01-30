@@ -1,7 +1,14 @@
 import cluster from "cluster"
 import os from 'os'
-import { server } from "./socket";
+import { app, server } from "./socket";
 import { logger } from "./utils/logger";
+import config from "./DefaultConfig/config";
+import globalErrorHandler, { CustomError } from "./utils/globalErrorHandler";
+import { NextFunction, Request, Response } from "express";
+import middleware from "./middleware/middleware";
+import { routeMiddleware } from "./middleware/routeMiddleware";
+import path from "path";
+import { connectToDB } from "./db";
 
 
 const numCPUs = os.cpus().length || 1;
@@ -18,10 +25,58 @@ const numCPUs = os.cpus().length || 1;
 // } else {
 
 
+app.set("views", path.join(__dirname, "views"))
+app.set('view engine', 'ejs');
+
+app.get('/', (req: Request, res: Response) => {
+    res.render('default');
+});
+
+
+middleware(app);
+// route middleware
+routeMiddleware(app);
+
+app.all("*", (req: Request, res: Response, next: NextFunction) => {
+    const error = new CustomError(`Can't find ${req.originalUrl} on the server`, 404);
+    globalErrorHandler(error, req, res, next);
+});
+// app.use(globalErrorHandler);
 function main() {
-    server.listen(2300, async () => {
-        logger.info('server is running')
-    })
+    try {
+        server.listen(Number(config?.PORT), config?.IP, async () => {
+            logger.info('server is running')
+            await connectToDB()
+            logger.info(`Worker process ${process.pid} is running on port ${config.PORT}`);
+
+            // automation()
+            // new seed()
+
+            // Error handling for worker processes
+            process.on('uncaughtException', (error) => {
+                console.error('Uncaught Exception:', error.message);
+                console.error(error.stack);
+            });
+
+            process.on('unhandledRejection', (reason, promise) => {
+                console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+            });
+
+            process.on('SIGTERM', () => {
+                console.log(`Worker process ${process.pid} received SIGTERM. Shutting down gracefully.`);
+                process.exit(0);
+            });
+
+            process.on('SIGINT', () => {
+                console.log(`Worker process ${process.pid} received SIGINT. Shutting down gracefully.`);
+                //   process.exit(0);
+
+            });
+        });
+    } catch (error) {
+        console.log(error)
+        // logger.error(error)
+    }
 }
 
 main()

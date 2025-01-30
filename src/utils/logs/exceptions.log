@@ -9,3 +9,406 @@
     at doWrite (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/readable-stream/lib/_stream_writable.js:390:139)
     at writeOrBuffer (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/readable-stream/lib/_stream_writable.js:381:5)
     at Console.Writable.write (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/readable-stream/lib/_stream_writable.js:302:11)
+2025-01-30 02:01:08 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:47:12)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:78:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:01:19 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:47:12)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:78:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:01:24 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:47:12)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:78:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:01:45 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:01:57 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:02:00 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:02:01 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:82:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:02:09 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:83:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:02:42 [ERROR]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/db/index.ts[0m:[93m5[0m:[93m32[0m - [91merror[0m[90m TS2304: [0mCannot find name 'config'.
+
+[7m5[0m         await mongoose.connect(config?.DATABASE_URL || '', { dbName: config?.DB_NAME })
+[7m [0m [91m                               ~~~~~~[0m
+[96msrc/db/index.ts[0m:[93m5[0m:[93m70[0m - [91merror[0m[90m TS2304: [0mCannot find name 'config'.
+
+[7m5[0m         await mongoose.connect(config?.DATABASE_URL || '', { dbName: config?.DB_NAME })
+[7m [0m [91m                                                                     ~~~~~~[0m
+
+    at createTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-01-30 02:02:48 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:83:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:03:00 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:83:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:03:06 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:83:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:03:09 [ERROR]: Error: listen EADDRINUSE: address already in use :::2300
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at Server.listen (node:net:2099:7)
+    at main (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:48:16)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:83:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1618:23)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-01-30 02:03:33 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:04:04 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:05:52 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:05:59 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:06:01 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:06:04 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:06:46 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:05 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:08 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:11 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:21 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:26 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:29 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:33 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:36 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:40 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:44 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:47 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:55 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:07:56 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:08:00 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:08:04 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:08:19 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:08:53 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:08:57 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:09:01 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:09:15 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:09:17 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:09:41 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:09:42 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 02:09:44 [ERROR]: Error: listen EADDRNOTAVAIL: address not available 192.168.10.25:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1915:21)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-01-30 03:21:55 [ERROR]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/routeMiddleware.ts[0m:[93m9[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'authRouter'.
+
+[7m9[0m     app.use(authRouter)
+[7m [0m [91m            ~~~~~~~~~~[0m
+
+    at createTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-01-30 03:22:06 [ERROR]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/routeMiddleware.ts[0m:[93m9[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'authRouter'.
+
+[7m9[0m     app.use(authRouter)
+[7m [0m [91m            ~~~~~~~~~~[0m
+
+    at createTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-01-30 03:22:07 [ERROR]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/routeMiddleware.ts[0m:[93m9[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'authRouter'.
+
+[7m9[0m     app.use(authRouter)
+[7m [0m [91m            ~~~~~~~~~~[0m
+
+    at createTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-01-30 03:22:09 [ERROR]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/routeMiddleware.ts[0m:[93m9[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'authRouter'.
+
+[7m9[0m     app.use(authRouter)
+[7m [0m [91m            ~~~~~~~~~~[0m
+
+    at createTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-01-30 03:22:12 [ERROR]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/middleware/routeMiddleware.ts[0m:[93m9[0m:[93m13[0m - [91merror[0m[90m TS2304: [0mCannot find name 'authRouter'.
+
+[7m9[0m     app.use(authRouter)
+[7m [0m [91m            ~~~~~~~~~~[0m
+
+    at createTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2025-01-30 03:23:23 [ERROR]: TSError: ⨯ Unable to compile TypeScript:
+[96msrc/apis/Auth/auth_route.ts[0m:[93m4[0m:[93m36[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m4[0m export const auth_router = express.;
+[7m [0m [91m                                   ~[0m
+
+    at createTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1699:10
+    at Object.require.extensions.<computed> [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
