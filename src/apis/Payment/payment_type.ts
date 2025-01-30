@@ -1,6 +1,6 @@
-import { Types } from "mongoose";
+import { Document, Types } from "mongoose";
 
-export interface IPayment {
+export interface IPayment extends Document {
     purpose: string;
     session_id: string;
     transaction_id: string;

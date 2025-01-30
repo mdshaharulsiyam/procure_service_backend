@@ -1,6 +1,6 @@
-import { Types } from "mongoose";
+import { Document, Types } from "mongoose";
 
-export interface IBusiness_service {
+export interface IBusiness_service extends Document {
     service: Types.ObjectId[];
     category: Types.ObjectId;
     description: string;
