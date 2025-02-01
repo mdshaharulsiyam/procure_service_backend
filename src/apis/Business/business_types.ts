@@ -33,7 +33,7 @@ export interface IBusiness extends Document {
     business_started_year: string;
     no_of_employee: number;
     website: string
-    service: IBusiness_service;
+    services: IBusiness_service;
     media: IBusiness_media;
     address: IBusiness_location
 }

@@ -3,7 +3,7 @@ import { IBusiness, IBusiness_location, IBusiness_media, IBusiness_service } fro
 
 const business_service_schema = new Schema<IBusiness_service>({
     service: {
-        Types: [Schema.Types.ObjectId],
+        type: [Schema.Types.ObjectId],
         ref: 'service',
         required: [true, 'service is is required'],
         validate: [
@@ -112,7 +112,7 @@ const business_schema = new Schema<IBusiness>({
         type: String,
         default: null
     },
-    service: {
+    services: {
         type: business_service_schema,
         required: [true, 'service info is required'],
         validate: [
