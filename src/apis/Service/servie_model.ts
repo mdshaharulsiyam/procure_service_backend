@@ -16,6 +16,6 @@ const service_schema = new Schema<IService>({
         ref: 'category',
         required: [true, 'category is required']
     }
-})
+}, { timestamps: true });
 
 export const service_model = model<IService>('service', service_schema);

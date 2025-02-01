@@ -38,5 +38,5 @@ const issue_schema = new Schema<IIssue>({
         enum: ['HIGH', 'MEDIUM', 'LOW'],
         default: 'LOW'
     },
-})
+}, { timestamps: true });
 export const issue_model = model<IIssue>('issue', issue_schema)
