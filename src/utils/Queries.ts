@@ -2,7 +2,7 @@ const escapeRegex = (str: string): string => {
     return str.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
 };
 
-interface QueryKeys {
+export interface QueryKeys {
     limit?: string;
     page?: string;
     sort?: string;
@@ -10,7 +10,7 @@ interface QueryKeys {
     [key: string]: any;
 }
 
-interface SearchKeys {
+export interface SearchKeys {
     [key: string]: string;
 }
 

@@ -26,11 +26,6 @@ const auth_schema = new Schema<IAuth>(
             required: false,
             default: null
         },
-        // IsAccountConnected: {
-        //     type: Boolean,
-        //     required: false,
-        //     default: false
-        // },
         img: {
             type: String,
             required: false,
