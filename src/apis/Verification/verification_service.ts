@@ -54,7 +54,7 @@ async function verify(data: { email: string, code: string }) {
             message: "email verified successfully",
             data: { email: result?.email, resetToken: accessToken, token: token }
         }
-
+        
     })
     return result
 }
