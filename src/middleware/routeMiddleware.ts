@@ -6,6 +6,7 @@ import { verification_router } from '../apis/Verification/verification_route';
 import { category_router } from '../apis/Category/category_route';
 import { service_router } from '../apis/Service/service_route';
 import { business_router } from '../apis/Business/business_router';
+import { issues_router } from '../apis/Issues/issues_route';
 
 
 
@@ -17,5 +18,6 @@ export const routeMiddleware = (app: Express) => {
     app.use(category_router)
     app.use(service_router)
     app.use(business_router)
+    app.use(issues_router)
 
 }
