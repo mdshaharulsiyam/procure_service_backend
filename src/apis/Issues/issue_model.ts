@@ -21,6 +21,11 @@ const issue_schema = new Schema<IIssue>({
         required: [true, 'service id is required'],
         ref: 'service'
     },
+    category: {
+        type: Schema.Types.ObjectId,
+        required: [true, 'service id is required'],
+        ref: 'category'
+    },
     address: {
         type: String,
         required: [true, 'address is required']

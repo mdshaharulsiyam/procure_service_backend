@@ -17,7 +17,7 @@ const loginLimiter = rateLimit({
 });
 
 auth_router
-    .post('/auth/sign-up', verifyToken(config.ADMIN, false), asyncWrapper(auth_controller.create))
+    .post('/auth/sign-up', verifyToken(config.USER, false), asyncWrapper(auth_controller.create))
 
     .post('/auth/sign-in', asyncWrapper(auth_controller.sing_in))
 

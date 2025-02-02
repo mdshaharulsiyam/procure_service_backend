@@ -39,7 +39,7 @@ const auth_schema = new Schema<IAuth>(
             validate: [
                 {
                     validator: function (value: string) {
-                        return !value || value.length <= 8;
+                        return (value && value.length >= 8) ? true : false;
                     },
                     message: 'Password must be at most 8 characters long',
                 },

@@ -60,10 +60,11 @@ async function get_profile(req: Request, res: Response) {
 }
 
 async function update_auth(req: Request, res: Response) {
-    const { is_identity_verified, is_verified, role, email, ...otherValues } = req?.body;
-
-    const documents = !Array.isArray(req.files) && req.files?.documents && req.files.documents.length > 0 && req.files.documents || null;
+    const { is_identity_verified, is_verified, role, email, accessToken, confirm_password, provider, block, ...otherValues } = req?.body;
+    
     const img = !Array.isArray(req.files) && req.files?.img && req.files.img.length > 0 && req.files.img[0]?.path || null;
+
+    const documents = !Array.isArray(req.files) && req.files?.documents && req.files.documents.length > 0 && req.files.documents?.map((doc: any) => doc.path) || null;
 
     const result = await auth_service.update_auth({ ...otherValues, documents, img }, req?.user as IAuth)
 

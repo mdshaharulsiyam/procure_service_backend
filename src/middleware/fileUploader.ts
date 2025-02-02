@@ -53,7 +53,7 @@ const uploadFile = () => {
     });
 
     const fileFilter = (req: Request, file: Express.Multer.File, cb: multer.FileFilterCallback) => {
-        const allowedFilenames = ['img', 'video', 'logo', 'verification'];
+        const allowedFilenames = ['img', 'video', 'logo', 'documents'];
         if (allowedFilenames.includes(file.fieldname)) {
             if (file.mimetype.startsWith('image/') || file.mimetype.startsWith('video/')) {
                 cb(null, true);
@@ -74,7 +74,7 @@ const uploadFile = () => {
         { name: 'img', maxCount: 4 },
         { name: 'video', maxCount: 1 },
         { name: 'logo', maxCount: 1 },
-        { name: 'verification', maxCount: 2 },
+        { name: 'documents', maxCount: 2 },
     ]);
 
     return (req: Request, res: Response, next: NextFunction) => {

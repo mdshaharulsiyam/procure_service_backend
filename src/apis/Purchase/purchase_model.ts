@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { model, Schema } from "mongoose";
 import { IPurchase } from "./purchase_type";
 
 const purchase_schema = new Schema<IPurchase>({
@@ -22,7 +22,9 @@ const purchase_schema = new Schema<IPurchase>({
     },
     status: {
         type: String,
-        enum: ['open', 'connected', 'closed'],
+        enum: ['open', 'connected', 'closed', 'cancelled'],
         default: 'open'
     }
 }, { timestamps: true });
+
+export const purchase_model = model<IPurchase>('purchase', purchase_schema);
