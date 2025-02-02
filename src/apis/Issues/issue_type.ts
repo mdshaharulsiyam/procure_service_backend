@@ -5,6 +5,7 @@ export interface IIssue extends Document {
     description: string;
     urgency: "HIGH" | "MEDIUM" | "LOW";
     service: Types.ObjectId;
+    category: Types.ObjectId;
     address: string;
     phone: string;
     user: Types.ObjectId,
