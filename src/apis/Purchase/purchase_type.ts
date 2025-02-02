@@ -5,5 +5,5 @@ export interface IPurchase extends Document {
     user: Types.ObjectId,
     is_quoted: boolean,
     is_reviewed: boolean;
-    status: "open" | "connected" | "closed";
+    status: "open" | "connected" | "closed" | "cancelled";
 }

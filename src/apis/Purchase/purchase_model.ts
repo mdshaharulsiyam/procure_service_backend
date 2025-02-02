@@ -22,7 +22,7 @@ const purchase_schema = new Schema<IPurchase>({
     },
     status: {
         type: String,
-        enum: ['open', 'connected', 'closed'],
+        enum: ['open', 'connected', 'closed', 'cancelled'],
         default: 'open'
     }
 }, { timestamps: true });

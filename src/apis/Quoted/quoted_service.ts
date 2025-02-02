@@ -4,6 +4,7 @@ import { issue_model } from "../Issues/issue_model";
 import { purchase_model } from "../Purchase/purchase_model";
 import { quoted_model } from "./quoted_model";
 import Queries, { QueryKeys, SearchKeys } from "../../utils/Queries";
+import { business_model } from "../Business/business_model";
 
 async function create(data: { [key: string]: string }, auth: IAuth) {
 
@@ -32,20 +33,25 @@ async function create(data: { [key: string]: string }, auth: IAuth) {
 }
 
 async function update_quote_status(id: string, auth: IAuth, status: string) {
-    const is_exist_issue = await quoted_model.findOne({ issue: id }).lean()
+    const is_exist_issue: any = await quoted_model.findOne({ issue: id }).populate('issue').populate('issue.user').lean()
 
     if (!is_exist_issue) throw new Error(`quote not found`)
+
+    if (is_exist_issue?.user?._id != auth?._id && is_exist_issue?.issue?.user?._id != auth?._id) throw new Error(`you can't update this quote`)
+
 
     const session = await mongoose.startSession();
 
     const result = await session.withTransaction(async () => {
 
         const [result] = await Promise.all([
-            purchase_model.updateOne({ issue: id }, { $set: { status: status } }, { session }),
+            purchase_model.updateOne({ issue: id, user: is_exist_issue?.user?._id }, { $set: { status: status } }, { session }),
             issue_model.updateOne({ _id: id }, { $set: { status: status } }, { session }),
+            ...(status == 'closed' ? [business_model.updateOne({ _id: is_exist_issue?.user?._id }, { $inc: { total_provided_service: 1 } }, { session })] : [])
         ])
 
         return result
+        
     })
 
     return {
