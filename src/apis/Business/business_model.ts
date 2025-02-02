@@ -71,6 +71,10 @@ const business_schema = new Schema<IBusiness>({
         unique: true,
         default: null
     },
+    business_reg_document: {
+        type: [String],
+        default: []
+    },
     is_verified: {
         type: Boolean,
         default: false
@@ -103,6 +107,10 @@ const business_schema = new Schema<IBusiness>({
     business_phone_no: {
         type: String,
         required: [true, 'business phone number is required']
+    },
+    business_started_year: {
+        type: String,
+        default: null
     },
     no_of_employee: {
         type: Number,
@@ -142,5 +150,7 @@ const business_schema = new Schema<IBusiness>({
     },
 
 }, { timestamps: true });
+
+business_schema.index({ business_reg_no: 1, "services.category": 1, auth: 1 }, { unique: true });
 
 export const business_model = model<IBusiness>('business', business_schema);
