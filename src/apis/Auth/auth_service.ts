@@ -8,7 +8,7 @@ import hashText from '../../utils/hashText';
 import { UnlinkFiles } from '../../middleware/fileUploader';
 import { business_model } from '../Business/business_model';
 async function sign_up(data: { [key: string]: string }, auth?: IAuth) {
-    const { role, is_verified, block, is_identity_verified, confirm_password, ...otherValues } = data
+    const { role, is_verified, block, credits, is_identity_verified, accessToken, confirm_password, ...otherValues } = data
 
     if (confirm_password != otherValues?.password) throw new Error(`confirm password doesn't match `)
 
@@ -89,9 +89,9 @@ async function reset_password(data: { [key: string]: string }, auth: IAuth) {
 async function change_password(data: { [key: string]: string }, auth: IAuth) {
     let { old_password } = data;
 
-    old_password = await hashText(old_password)
+    const is_match_pass = await bcrypt.compare(old_password, auth?.password);
 
-    if (old_password !== auth?.password) throw new Error(`old password doesn't match `)
+    if (!is_match_pass) throw new Error(`old password doesn't match `)
 
     return await reset_password(data, auth)
 
@@ -107,8 +107,14 @@ async function update_auth(data: { [key: string]: string }, auth: IAuth) {
             }
         }
     );
+
     if (data?.img && auth?.img) UnlinkFiles([auth?.img]);
-    return result
+
+    return {
+        success: true,
+        message: "profile updated successfully",
+        data: result
+    }
 
 }
 
