@@ -10,4 +10,5 @@ export interface IIssue extends Document {
     phone: string;
     user: Types.ObjectId,
     status: "open" | "connected" | "closed";
+    
 }
