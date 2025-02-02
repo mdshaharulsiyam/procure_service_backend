@@ -4,8 +4,6 @@ export interface IBusiness_service extends Document {
     service: Types.ObjectId[];
     category: Types.ObjectId;
     description: string;
-    business_reg_no: string
-    business_reg_no_document: string[]
 }
 
 export interface IBusiness_media {
@@ -24,6 +22,7 @@ export interface IBusiness_location {
 
 export interface IBusiness extends Document {
     business_reg_no: string,
+    business_reg_document: string[]
     is_verified: boolean;
     rating: number;
     total_rated: number;
