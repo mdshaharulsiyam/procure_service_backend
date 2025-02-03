@@ -9,6 +9,6 @@ export const purchase_router = express.Router()
 purchase_router
     .post('/purchase/create', verifyToken(config.USER), asyncWrapper(purchase_controller.create))
 
-    .get('/purchase/get-all', asyncWrapper(purchase_controller.get_all))
+    .get('/purchase/get-all', verifyToken(config.PROFESSIONAL), asyncWrapper(purchase_controller.get_all))
 
-    .delete('/purchase/delete/:id', verifyToken(config.USER), asyncWrapper(purchase_controller.delete_purchase))
+    .delete('/purchase/delete/:id', verifyToken(config.PROFESSIONAL), asyncWrapper(purchase_controller.delete_purchase))

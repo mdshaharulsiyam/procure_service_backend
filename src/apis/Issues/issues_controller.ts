@@ -50,8 +50,8 @@ async function get_all(req: Request, res: Response) {
         ...otherValues
     }
 
-    const populatePath: string | string[] = 'user'
-    const selectFields: string | string[] = 'name img'
+    const populatePath = ['user', 'service', 'category']
+    const selectFields: string | string[] = ['name img -_id', 'name img -_id', 'name img -_id']
     const modelSelect: string = '-phone -email'
 
     const result = await issues_service.get_all(queryKeys, searchKeys, populatePath, selectFields, modelSelect)

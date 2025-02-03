@@ -72,7 +72,7 @@ async function update_quote_status(id: string, auth: IAuth, status: string) {
 
 }
 
-async function get_all(queryKeys: QueryKeys, searchKeys: SearchKeys, populatePath?: string | string[], selectFields?: string | string[], modelSelect?: string) {
+async function get_all(queryKeys: QueryKeys, searchKeys: SearchKeys, populatePath: any, selectFields?: string | string[], modelSelect?: string) {
     return await Queries(quoted_model, queryKeys, searchKeys, populatePath, selectFields, modelSelect)
 }
 

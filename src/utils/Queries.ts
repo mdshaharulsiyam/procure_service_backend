@@ -27,11 +27,11 @@ interface ResponseData<T> {
     pagination?: Pagination;
 }
 
-const Queries = async <T>(
+const Queries = async<T>(
     collectionModel: any,
     queryKeys: QueryKeys,
     searchKeys: SearchKeys,
-    populatePath?: string | string[],
+    populatePath?: any,
     selectFields?: string | string[],
     modelSelect?: string
 ): Promise<ResponseData<T>> => {
@@ -91,9 +91,11 @@ const Queries = async <T>(
             if (Array.isArray(populatePath)) {
                 populatePath.forEach((path, index) => {
                     const fields = Array.isArray(selectFields) ? selectFields[index] : selectFields;
+
                     queryExec = queryExec.populate({
-                        path: path,
-                        select: fields
+                        path: typeof path == 'object' ? path?.path : path,
+                        select: fields,
+                        populate: typeof path == 'object' ? path?.populate : null
                     });
                 });
             } else {
@@ -139,3 +141,28 @@ const Queries = async <T>(
 };
 
 export default Queries;
+
+
+
+
+
+
+
+//     populatePath.forEach((path, index) => {
+//         const fields = Array.isArray(selectFields) ? selectFields[index] : selectFields;
+//         let set_path = path
+//         let set_populate = null
+//         if (typeof path == 'object') {
+//             set_path = path?.path
+//             set_populate = path?.populate
+//         } else {
+//             set_path = path
+//             set_populate = null
+//         }
+//         console.log({ set_path, set_populate })
+//         queryExec = queryExec.populate({
+//             path: set_path,
+//             select: fields,
+//             populate: set_populate
+//         });
+//     });

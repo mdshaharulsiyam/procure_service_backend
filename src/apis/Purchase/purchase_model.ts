@@ -4,7 +4,7 @@ import { IPurchase } from "./purchase_type";
 const purchase_schema = new Schema<IPurchase>({
     user: {
         type: Schema.Types.ObjectId,
-        ref: 'user',
+        ref: 'auth',
         required: [true, 'user id is required']
     },
     issue: {

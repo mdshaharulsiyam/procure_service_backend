@@ -14,7 +14,7 @@ async function create(data: { [key: string]: string }) {
     }
 }
 
-async function get_all(queryKeys: QueryKeys, searchKeys: SearchKeys, populatePath?: string | string[], selectFields?: string | string[], modelSelect?: string) {
+async function get_all(queryKeys: QueryKeys, searchKeys: SearchKeys, populatePath?: any, selectFields?: string | string[], modelSelect?: string) {
     return await Queries(category_model, queryKeys, searchKeys, populatePath, selectFields, modelSelect)
 }
 

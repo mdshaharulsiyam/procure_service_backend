@@ -151,6 +151,6 @@ const business_schema = new Schema<IBusiness>({
 
 }, { timestamps: true });
 
-business_schema.index({ "services.$.category": 1, auth: 1 }, { unique: true });//business_reg_no: 1, 
+business_schema.index({ "services.category": 1, auth: 1 }, { unique: true });//business_reg_no: 1, 
 
 export const business_model = model<IBusiness>('business', business_schema);

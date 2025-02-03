@@ -39,7 +39,7 @@ async function get_quote(req: Request, res: Response) {
         ...otherValues
     }
 
-    const populatePath: string | string[] = ['user', 'issue', 'issue.service', 'issue.category']
+    const populatePath = ['user', 'issue', 'issue.service', 'issue.category']
     const selectFields: string | string[] = ['name img', '-phone -email', 'name img', 'name img']
     const modelSelect: string = ''
 
