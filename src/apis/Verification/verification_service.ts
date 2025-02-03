@@ -22,41 +22,46 @@ async function create(email: string) {
 
 async function verify(data: { email: string, code: string }) {
     const session = await mongoose.startSession();
-    const result = await session.withTransaction(async () => {
+    try {
+        const result = await session.withTransaction(async () => {
 
-        const excitingVerification = await verification_model.findOne({ email: data?.email, code: data?.code, updatedAt: { $gte: new Date(Date.now() - 5 * 60 * 1000) } })
+            const excitingVerification = await verification_model.findOne({ email: data?.email, code: data?.code, updatedAt: { $gte: new Date(Date.now() - 5 * 60 * 1000) } })
 
-        if (!excitingVerification) throw new Error(`verification code not found or it may expired`)
-        // accessToken
-        const accessToken = await jwt.sign({
-            email: data?.email, code: data?.code
-        }, config.ACCESS_TOKEN_SECRET || '', { expiresIn: 5 * 60 });
+            if (!excitingVerification) throw new Error(`verification code not found or it may expired`)
+            // accessToken
+            const accessToken = await jwt.sign({
+                email: data?.email, code: data?.code
+            }, config.ACCESS_TOKEN_SECRET || '', { expiresIn: 5 * 60 });
 
 
-        const [result] = await Promise.all([
-            auth_model.findOneAndUpdate(
-                { email: data?.email },
-                { accessToken: accessToken, is_verified: true },
-                { new: true, session }
-            ),
+            const [result] = await Promise.all([
+                auth_model.findOneAndUpdate(
+                    { email: data?.email },
+                    { accessToken: accessToken, is_verified: true },
+                    { new: true, session }
+                ),
 
-            verification_model.deleteMany({ email: data?.email })
-        ])
+                verification_model.deleteMany({ email: data?.email })
+            ])
 
-        const token = await jwt.sign(
-            { email: result?.email, id: result?._id, role: result?.role },
-            config.ACCESS_TOKEN_SECRET || '',
-            { expiresIn: 60 * 60 * 24 * 500 }
-        )
+            const token = await jwt.sign(
+                { email: result?.email, id: result?._id, role: result?.role },
+                config.ACCESS_TOKEN_SECRET || '',
+                { expiresIn: 60 * 60 * 24 * 500 }
+            )
+            return {
+                success: false,
+                message: "email verified successfully",
+                data: { email: result?.email, resetToken: accessToken, token: token }
+            }
 
-        return {
-            success: false,
-            message: "email verified successfully",
-            data: { email: result?.email, resetToken: accessToken, token: token }
-        }
-        
-    })
-    return result
+        })
+        return result
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
+    }
 }
 
 export const verification_service = Object.freeze({

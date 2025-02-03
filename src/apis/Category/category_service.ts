@@ -43,19 +43,24 @@ async function delete_category(id: string, data: { [key: string]: string }, auth
     if (!is_pass_mass) throw new Error(`password doesn't match`)
 
     const session = await mongoose.startSession();
-    const result = await session.withTransaction(async () => {
-        const [result] = await Promise.all([
-            category_model.findByIdAndDelete(id, { session }),
-            service_model.deleteMany({ category: id }, { session }),
-            business_model.deleteMany({ category: id }, { session })
-        ])
-        return result
-    })
-    await session.endSession();
-    return {
-        success: true,
-        message: 'category deleted successfully',
-        data: result
+    try {
+        const result = await session.withTransaction(async () => {
+            const [result] = await Promise.all([
+                category_model.findByIdAndDelete(id, { session }),
+                service_model.deleteMany({ category: id }, { session }),
+                business_model.deleteMany({ category: id }, { session })
+            ])
+            return result
+        })
+        return {
+            success: true,
+            message: 'category deleted successfully',
+            data: result
+        }
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
 }
 

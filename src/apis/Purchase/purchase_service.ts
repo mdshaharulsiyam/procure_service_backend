@@ -21,19 +21,24 @@ async function create(data: { [key: string]: string }, auth: IAuth) {
 
     const session = await mongoose.startSession();
 
-    const result = await session.withTransaction(async () => {
-        const [result] = await Promise.all([
-            purchase_model.insertMany(data, { session }),
-            auth_model.updateOne({ email: auth?.email }, { $inc: { credits: -Number(quote_price?.quote_price) } }, { session })
-        ])
+    try {
+        const result = await session.withTransaction(async () => {
+            const [result] = await Promise.all([
+                purchase_model.insertMany(data, { session }),
+                auth_model.updateOne({ email: auth?.email }, { $inc: { credits: -Number(quote_price?.quote_price) } }, { session })
+            ])
 
-        return result
-    })
-
-    return {
-        success: true,
-        message: 'issue created successfully',
-        data: result
+            return result
+        })
+        return {
+            success: true,
+            message: 'issue created successfully',
+            data: result
+        }
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
 
 }

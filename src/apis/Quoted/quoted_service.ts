@@ -15,20 +15,25 @@ async function create(data: { [key: string]: string }, auth: IAuth) {
     if (is_exist_issue?.user == auth?._id) throw new Error(`you can't quote your own issue`)
 
     const session = await mongoose.startSession();
+    try {
 
-    const result = await session.withTransaction(async () => {
-        const [result] = await Promise.all([
-            quoted_model.insertMany(data, { session }),
-            purchase_model.updateOne({ issue: data?.issue }, { $set: { is_quoted: true } }, { session }),
-        ])
+        const result = await session.withTransaction(async () => {
+            const [result] = await Promise.all([
+                quoted_model.insertMany(data, { session }),
+                purchase_model.updateOne({ issue: data?.issue }, { $set: { is_quoted: true } }, { session }),
+            ])
 
-        return result
-    })
-
-    return {
-        success: true,
-        message: 'issue quoted successfully',
-        data: result
+            return result
+        })
+        return {
+            success: true,
+            message: 'issue quoted successfully',
+            data: result
+        }
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
 }
 
@@ -42,22 +47,27 @@ async function update_quote_status(id: string, auth: IAuth, status: string) {
 
     const session = await mongoose.startSession();
 
-    const result = await session.withTransaction(async () => {
+    try {
+        const result = await session.withTransaction(async () => {
 
-        const [result] = await Promise.all([
-            purchase_model.updateOne({ issue: id, user: is_exist_issue?.user?._id }, { $set: { status: status } }, { session }),
-            issue_model.updateOne({ _id: id }, { $set: { status: status } }, { session }),
-            ...(status == 'closed' ? [business_model.updateOne({ _id: is_exist_issue?.user?._id }, { $inc: { total_provided_service: 1 } }, { session })] : [])
-        ])
+            const [result] = await Promise.all([
+                purchase_model.updateOne({ issue: id, user: is_exist_issue?.user?._id }, { $set: { status: status } }, { session }),
+                issue_model.updateOne({ _id: id }, { $set: { status: status } }, { session }),
+                ...(status == 'closed' ? [business_model.updateOne({ _id: is_exist_issue?.user?._id }, { $inc: { total_provided_service: 1 } }, { session })] : [])
+            ])
 
-        return result
-        
-    })
+            return result
 
-    return {
-        success: true,
-        message: 'issue quoted successfully',
-        data: result
+        })
+        return {
+            success: true,
+            message: 'issue quoted successfully',
+            data: result
+        }
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
 
 }

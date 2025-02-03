@@ -37,11 +37,12 @@ middleware(app);
 // route middleware
 routeMiddleware(app);
 
+app.use(globalErrorHandler);
+
 app.all("*", (req: Request, res: Response, next: NextFunction) => {
     const error = new CustomError(`Can't find ${req.originalUrl} on the server`, 404);
     globalErrorHandler(error, req, res, next);
 });
-// app.use(globalErrorHandler);
 function main() {
     try {
         server.listen(Number(config?.PORT), config?.IP, async () => {
