@@ -4,13 +4,14 @@ import { ICategory } from "./category_type";
 const category_schema = new Schema<ICategory>({
     name: {
         type: String,
-        required: [true, 'name is required']
+        required: [true, 'name is required'],
+        unique: true
     },
     img: {
         type: String,
         required: [true, 'img is required']
     },
-    available_position: {
+    total_business: {
         type: Number,
         default: 0
     },
