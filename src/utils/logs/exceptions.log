@@ -14341,3 +14341,55 @@ src/apis/Business/business_service.ts(27,9): error TS1434: Unexpected keyword or
     at listenInCluster (node:net:1994:12)
     at node:net:2203:7
     at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-02-03 03:05:02 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Issues/issues_controller.ts(8,12): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Issues/issues_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-5134172320132955.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-5134172320132955.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-5134172320132955.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 03:05:11 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Issues/issues_controller.ts(54,5): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Issues/issues_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-5134172320132955.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-5134172320132955.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-5134172320132955.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 03:05:36 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Issues/issues_controller.ts(54,62): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Issues/issues_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-5134172320132955.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-5134172320132955.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-5134172320132955.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 03:05:42 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Issues/issues_controller.ts(54,62): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Issues/issues_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-5134172320132955.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-5134172320132955.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-5134172320132955.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
