@@ -85,7 +85,7 @@ const business_schema = new Schema<IBusiness>({
         validate: [
             {
                 validator: function (value: number) {
-                    return Number(value) > 5
+                    return Number(value) <= 5
                 },
                 message: `message can't be more then 5`
             }
@@ -126,7 +126,7 @@ const business_schema = new Schema<IBusiness>({
         validate: [
             {
                 validator: function (value: IBusiness_service) {
-                    return Object.keys(value)?.length <= 0
+                    return Object.keys(value)?.length > 0
                 },
                 message: 'service info is required'
             }
@@ -142,7 +142,7 @@ const business_schema = new Schema<IBusiness>({
         validate: [
             {
                 validator: function (value: IBusiness_location) {
-                    return Object.keys(value)?.length <= 0
+                    return Object.keys(value)?.length > 0
                 },
                 message: 'address is required'
             }
@@ -151,6 +151,6 @@ const business_schema = new Schema<IBusiness>({
 
 }, { timestamps: true });
 
-business_schema.index({ business_reg_no: 1, "services.category": 1, auth: 1 }, { unique: true });
+business_schema.index({ "services.$.category": 1, auth: 1 }, { unique: true });//business_reg_no: 1, 
 
 export const business_model = model<IBusiness>('business', business_schema);

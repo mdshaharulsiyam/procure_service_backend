@@ -97,7 +97,7 @@ const handleProdError = (res: Response, error: any): void => {
 const globalErrorHandler = (error: any, req: Request, res: Response, next: NextFunction, model?: string): void => {
     error.statusCode = error.statusCode || 500;
     error.status = error.status || 'error';
-    console.log('this a error from create service ', error)
+    console.log('this a error  ', error)
     if (process.env.NODE_ENV === 'development') {
         if (error.name === 'CastError') error = handleCastError(error);
         if (error.code === 11000) error = handleDuplicateKeyError(error, model || 'Resource');
@@ -107,7 +107,6 @@ const globalErrorHandler = (error: any, req: Request, res: Response, next: NextF
         if (error.name === 'CastError') error = handleCastError(error);
         if (error.code === 11000) error = handleDuplicateKeyError(error, model || 'Resource');
         if (error.name === 'ValidationError') error = handleValidationError(error);
-        console.log(error)
         handleProdError(res, error);
     }
 };

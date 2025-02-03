@@ -7,18 +7,23 @@ import { IAuth } from "../Auth/auth_types";
 
 async function create(data: { [key: string]: string }) {
     const session = await mongoose.startSession();
-    const result = await session.withTransaction(async () => {
-        const [result] = await Promise.all([
-            service_model.insertMany(data, { session }),
-            category_model.updateOne({ _id: data?.category }, { $inc: { total_service: 1 } }, { session })
-        ])
-        return result
-    })
-    await session.endSession();
-    return {
-        success: true,
-        message: 'service created successfully',
-        data: result
+    try {
+        const result = await session.withTransaction(async () => {
+            const [result] = await Promise.all([
+                service_model.insertMany(data, { session }),
+                category_model.updateOne({ _id: data?.category }, { $inc: { total_service: 1 } }, { session })
+            ])
+            return result
+        })
+        return {
+            success: true,
+            message: 'service created successfully',
+            data: result
+        }
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
 }
 
@@ -27,28 +32,33 @@ async function update(id: string, data: { [key: string]: string }) {
     if (!is_exists) throw new Error(`service not found`)
 
     const session = await mongoose.startSession();
-    const result = await session.withTransaction(async () => {
+    try {
+        const result = await session.withTransaction(async () => {
 
-        const [result] = await Promise.all([
-            service_model.findByIdAndUpdate(id, {
-                $set: {
-                    ...data
-                }
-            }, { new: true, session }),
-            ...(is_exists?.category?.toString() == data?.category) ? [] : [
-                category_model.updateOne({ _id: is_exists?.category }, { $inc: { total_service: -1 } }, { session }),
-                category_model.updateOne({ _id: data?.category }, { $inc: { total_service: 1 } }, { session })
-            ]
-        ])
+            const [result] = await Promise.all([
+                service_model.findByIdAndUpdate(id, {
+                    $set: {
+                        ...data
+                    }
+                }, { new: true, session }),
+                ...(is_exists?.category?.toString() == data?.category) ? [] : [
+                    category_model.updateOne({ _id: is_exists?.category }, { $inc: { total_service: -1 } }, { session }),
+                    category_model.updateOne({ _id: data?.category }, { $inc: { total_service: 1 } }, { session })
+                ]
+            ])
 
-        return result
-    })
+            return result
+        })
 
-    await session.endSession();
-    return {
-        success: true,
-        message: 'service updated successfully',
-        data: result
+        return {
+            success: true,
+            message: 'service updated successfully',
+            data: result
+        }
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
 
 }
@@ -62,18 +72,23 @@ async function delete_service(id: string) {// data: { [key: string]: string }, a
     // if (password !== auth?.password) throw new Error(`password doesn't match`)
 
     const session = await mongoose.startSession();
-    const result = await session.withTransaction(async () => {
-        const [result] = await Promise.all([
-            service_model.findByIdAndDelete(id, { session }),
-            category_model.updateOne({ _id: is_exists?.category }, { $inc: { total_service: -1 } }, { session })
-        ])
-        return result
-    })
-    await session.endSession();
-    return {
-        success: true,
-        message: 'service deleted successfully',
-        data: result
+    try {
+        const result = await session.withTransaction(async () => {
+            const [result] = await Promise.all([
+                service_model.findByIdAndDelete(id, { session }),
+                category_model.updateOne({ _id: is_exists?.category }, { $inc: { total_service: -1 } }, { session })
+            ])
+            return result
+        })
+        return {
+            success: true,
+            message: 'service deleted successfully',
+            data: result
+        }
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
 }
 

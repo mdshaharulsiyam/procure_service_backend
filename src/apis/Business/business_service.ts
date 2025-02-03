@@ -1,3 +1,4 @@
+import { NextFunction } from 'express';
 import mongoose from "mongoose";
 import { business_model } from "./business_model";
 import Queries, { QueryKeys, SearchKeys } from "../../utils/Queries";
@@ -5,24 +6,30 @@ import { category_model } from "../Category/category_model";
 import { IBusiness } from "./business_types";
 
 async function create(data: IBusiness) {
-
-    const { total_rated, rating, is_verified, total_provided_service, ...otherValues } = data
+    const { total_rated, rating, is_verified, total_provided_service, ...otherValues } = data;
     const session = await mongoose.startSession();
-    const result = await session.withTransaction(async () => {
-        const [business] = await Promise.all([
-            business_model.insertMany(otherValues, { session }),
-            category_model.updateOne({ _id: otherValues?.services?.category }, { $inc: { total_business: 1 } }, { session })
-        ])
-        return business
-    })
-    return {
-        success: true,
-        message: 'business profile created successfully',
-        data: result
+
+    try {
+        const result = await session.withTransaction(async () => {
+            const [business] = await Promise.all([
+                business_model.insertMany(otherValues, { session }),
+                category_model.updateOne({ _id: otherValues?.services?.category }, { $inc: { total_business: 1 } }, { session })
+            ]);
+            return business;
+        });
+
+        return {
+            success: true,
+            message: 'Business profile created successfully',
+            data: result
+        };
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
-
-
 }
+
 
 async function update(id: string, data: IBusiness) {
 
@@ -50,18 +57,24 @@ async function delete_business(id: string, auth: string) {
 
     const session = await mongoose.startSession();
 
-    const result = await session.withTransaction(async () => {
-        const [result] = await Promise.all([
-            business_model.findOneAndDelete({ _id: id, auth }, { session }),
-            category_model.updateOne({ _id: is_exists?.services?.category }, { $inc: { total_business: -1 } }, { session })
-        ])
+    try {
+        const result = await session.withTransaction(async () => {
+            const [result] = await Promise.all([
+                business_model.findOneAndDelete({ _id: id, auth }, { session }),
+                category_model.updateOne({ _id: is_exists?.services?.category }, { $inc: { total_business: -1 } }, { session })
+            ])
 
-        return result
-    })
-    return {
-        success: true,
-        message: 'service deleted successfully',
-        data: result
+            return result
+        })
+        return {
+            success: true,
+            message: 'business deleted successfully',
+            data: result
+        }
+    } catch (error) {
+        throw error;
+    } finally {
+        await session.endSession();
     }
 }
 
