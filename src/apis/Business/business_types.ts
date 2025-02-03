@@ -2,7 +2,7 @@ import { Document, Types } from "mongoose";
 
 export interface IBusiness_service extends Document {
     service: Types.ObjectId[];
-    category: Types.ObjectId;
+    category: Types.ObjectId | undefined;
     description: string;
 }
 

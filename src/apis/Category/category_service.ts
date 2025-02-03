@@ -3,9 +3,8 @@ import Queries, { QueryKeys, SearchKeys } from "../../utils/Queries";
 import { category_model } from "./category_model";
 import { service_model } from '../Service/service_model';
 import { business_model } from '../Business/business_model';
-import hashText from '../../utils/hashText';
 import { IAuth } from '../Auth/auth_types';
-
+import bcrypt from 'bcrypt'
 async function create(data: { [key: string]: string }) {
     const result = await category_model.create(data)
     return {
@@ -39,9 +38,9 @@ async function delete_category(id: string, data: { [key: string]: string }, auth
 
     if (!is_exists) throw new Error(`category not found`)
 
-    const password = await hashText(data?.password)
+    const is_pass_mass = await bcrypt.compare(data?.password, auth?.password)
 
-    if (password !== auth?.password) throw new Error(`password doesn't match`)
+    if (!is_pass_mass) throw new Error(`password doesn't match`)
 
     const session = await mongoose.startSession();
     const result = await session.withTransaction(async () => {
