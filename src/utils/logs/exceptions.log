@@ -14336,3 +14336,8 @@ src/apis/Business/business_service.ts(27,9): error TS1434: Unexpected keyword or
     at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1313:32)
     at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 02:43:29 [ERROR]: Error: listen EADDRINUSE: address already in use 10.0.60.23:5003
+    at Server.setupListenHandle [as _listen2] (node:net:1937:16)
+    at listenInCluster (node:net:1994:12)
+    at node:net:2203:7
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)

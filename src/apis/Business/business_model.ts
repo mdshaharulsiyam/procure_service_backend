@@ -9,7 +9,7 @@ const business_service_schema = new Schema<IBusiness_service>({
         validate: [
             {
                 validator: function (value: [Schema.Types.ObjectId]) {
-                    return !value || value?.length <= 0
+                    return value && value?.length > 0
                 },
                 message: 'at least one service mandatory for a business profile'
             }
