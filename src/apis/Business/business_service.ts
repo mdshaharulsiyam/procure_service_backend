@@ -4,6 +4,7 @@ import { business_model } from "./business_model";
 import Queries, { QueryKeys, SearchKeys } from "../../utils/Queries";
 import { category_model } from "../Category/category_model";
 import { IBusiness } from "./business_types";
+import auth_model from '../Auth/auth_model';
 
 async function create(data: IBusiness) {
     const { total_rated, rating, is_verified, total_provided_service, ...otherValues } = data;
@@ -13,7 +14,8 @@ async function create(data: IBusiness) {
         const result = await session.withTransaction(async () => {
             const [business] = await Promise.all([
                 business_model.insertMany(otherValues, { session }),
-                category_model.updateOne({ _id: otherValues?.services?.category }, { $inc: { total_business: 1 } }, { session })
+                category_model.updateOne({ _id: otherValues?.services?.category }, { $inc: { total_business: 1 } }, { session }),
+                auth_model.updateOne({ _id: otherValues?.auth }, { role: "PROFESSIONAL" }, { session })
             ]);
             return business;
         });
@@ -78,7 +80,7 @@ async function delete_business(id: string, auth: string) {
     }
 }
 
-async function get_all(queryKeys: QueryKeys, searchKeys: SearchKeys, populatePath?: string | string[], selectFields?: string | string[], modelSelect?: string) {
+async function get_all(queryKeys: QueryKeys, searchKeys: SearchKeys, populatePath?: any, selectFields?: string | string[], modelSelect?: string) {
     return await Queries(business_model, queryKeys, searchKeys, populatePath, selectFields, modelSelect)
 
 }
