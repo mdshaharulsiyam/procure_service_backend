@@ -9,7 +9,9 @@ import middleware from "./middleware/middleware";
 import { routeMiddleware } from "./middleware/routeMiddleware";
 import path from "path";
 import { connectToDB } from "./db";
-
+import express from 'express';
+import { payment_controller } from "./apis/Payment/payment_controller";
+import asyncWrapper from "./middleware/asyncWrapper";
 
 const numCPUs = os.cpus().length || 1;
 
@@ -23,7 +25,9 @@ const numCPUs = os.cpus().length || 1;
 //         cluster.fork();
 //     });
 // } else {
-
+app.post('/payment/complete',
+    express.raw({ type: 'application/json' }),
+    asyncWrapper(payment_controller.webhook))
 
 app.set("views", path.join(__dirname, "views"))
 app.set('view engine', 'ejs');

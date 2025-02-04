@@ -86,3 +86,10 @@ async function webhook(req: Request, res: Response,) {
             console.log(`Unhandled event type ${event.type}`);
     }
 }
+
+export const payment_controller = Object.freeze({
+    create,
+    success,
+    cancel,
+    webhook
+})
