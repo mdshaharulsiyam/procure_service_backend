@@ -28,6 +28,7 @@ const quoted_schema = new Schema<IQuoted>({
         ref: 'issue',
         required: [true, 'issue id is required']
     },
+    
     status: {
         type: String,
         enum: ['open', 'connected', 'closed', 'cancelled'],
