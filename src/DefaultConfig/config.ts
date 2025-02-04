@@ -22,7 +22,8 @@ const config = Object.freeze({
     WEEK: ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'],
     SeedAdminEmail: process.env.SeedAdminEmail || '',
     SeedAdminPassword: process.env.SeedAdminPassword || '',
-    SUBSCRIPTION_PRICE: process.env.SUBSCRIPTION_PRICE || ''
+    SUBSCRIPTION_PRICE: process.env.SUBSCRIPTION_PRICE || '',
+    CREDITS_PER_DOLLAR: Number(process.env.CREDITS_PER_DOLLAR) || 0,
 });
 
 export const HttpStatus = Object.freeze({

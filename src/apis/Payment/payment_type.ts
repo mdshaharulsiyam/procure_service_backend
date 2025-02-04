@@ -6,5 +6,6 @@ export interface IPayment extends Document {
     transaction_id: string;
     status: boolean,
     user: Types.ObjectId,
-    pay_by: string
+    pay_by: string;
+    amount: number
 }

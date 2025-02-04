@@ -34,6 +34,11 @@ const payment_schema = new Schema<IPayment>({
         required: [true, 'pay by is required'],
         default: 'CARD',
         enum: ['CARD']
+    },
+    amount: {
+        type: Number,
+        required: [true, 'amount is required'],
+        default: 0
     }
 }, { timestamps: true });
 
