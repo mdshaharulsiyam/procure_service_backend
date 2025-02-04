@@ -8,7 +8,14 @@ import { business_model } from "../Business/business_model";
 
 async function create(data: { [key: string]: string }, auth: IAuth) {
 
-    const is_exist_issue = await issue_model.findOne({ _id: data?.issue }).lean()
+    const [is_exist_issue, is_exist_purchase] = await Promise.all([
+        issue_model.findOne({ _id: data?.issue }).lean(),
+        purchase_model.findOne({ issue: data?.issue, user: auth?._id }).lean()//is_quoted: true 
+    ])
+
+    if (!is_exist_purchase) throw new Error(`you ca't quote this issue`)
+
+    if (is_exist_purchase?.is_quoted) throw new Error(`you have already quoted this issue`)
 
     if (!is_exist_issue) throw new Error(`issue not found`)
 
@@ -19,7 +26,7 @@ async function create(data: { [key: string]: string }, auth: IAuth) {
 
         const result = await session.withTransaction(async () => {
             const [result] = await Promise.all([
-                quoted_model.insertMany(data, { session }),
+                quoted_model.insertMany({ ...data, user: auth?._id, user_to: is_exist_issue?.user }, { session }),
                 purchase_model.updateOne({ issue: data?.issue }, { $set: { is_quoted: true } }, { session }),
             ])
 
@@ -38,11 +45,14 @@ async function create(data: { [key: string]: string }, auth: IAuth) {
 }
 
 async function update_quote_status(id: string, auth: IAuth, status: string) {
-    const is_exist_issue: any = await quoted_model.findOne({ issue: id }).populate('issue').populate('issue.user').lean()
+
+    const is_exist_issue: any = await quoted_model.findOne({ _id: id }).lean()
 
     if (!is_exist_issue) throw new Error(`quote not found`)
 
-    if (is_exist_issue?.user?._id != auth?._id && is_exist_issue?.issue?.user?._id != auth?._id) throw new Error(`you can't update this quote`)
+    if (is_exist_issue?.status == 'cancelled') throw new Error(`this quote has been cancelled`)
+
+    if (is_exist_issue?.user?.toString() != auth?._id && is_exist_issue?.issue?.user?._to?.toString() != auth?._id && auth?.role !== 'ADMIN' && auth?.role !== 'SUPER_ADMIN') throw new Error(`you can't update this quote`)
 
 
     const session = await mongoose.startSession();
@@ -61,7 +71,7 @@ async function update_quote_status(id: string, auth: IAuth, status: string) {
         })
         return {
             success: true,
-            message: 'issue quoted successfully',
+            message: `quote status updated to ${status} successfully`,
             data: result
         }
     } catch (error) {

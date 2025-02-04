@@ -9,6 +9,7 @@ import { business_router } from '../apis/Business/business_router';
 import { issues_router } from '../apis/Issues/issues_route';
 import { purchase_router } from '../apis/Purchase/purchase_route';
 import { review_router } from '../apis/Review/review_route';
+import { quoted_router } from '../apis/Quoted/quoted_route';
 
 
 
@@ -23,5 +24,6 @@ export const routeMiddleware = (app: Express) => {
     app.use(issues_router)
     app.use(purchase_router)
     app.use(review_router)
+    app.use(quoted_router)
 
 }

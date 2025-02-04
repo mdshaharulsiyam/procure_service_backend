@@ -4,7 +4,6 @@ import { purchase_service } from "./purchase_service";
 import { HttpStatus } from "../../DefaultConfig/config";
 import { sendResponse } from "../../utils/sendResponse";
 import { SearchKeys } from "../../utils/Queries";
-import { purchase_model } from "./purchase_model";
 
 async function create(req: Request, res: Response) {
     const result = await purchase_service.create(req?.body, req?.user as IAuth)

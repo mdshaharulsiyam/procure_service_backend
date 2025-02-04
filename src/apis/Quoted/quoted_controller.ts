@@ -39,9 +39,26 @@ async function get_quote(req: Request, res: Response) {
         ...otherValues
     }
 
-    const populatePath = ['user', 'issue', 'issue.service', 'issue.category']
-    const selectFields: string | string[] = ['name img', '-phone -email', 'name img', 'name img']
+    let populatePath = ['user', 'user_to', 'issue',]
+    let selectFields: string | string[] = ['name img', 'name img', '-phone -email']
+
     const modelSelect: string = ''
+
+
+    if (req?.user?.role != "ADMIN" && req?.user?.role != "SUPER_ADMIN") {
+        if (req?.user?.role == "USER") {
+            queryKeys.user_to = req?.user?._id as string
+            populatePath = ['user', 'issue',]
+            selectFields = ['name img', '-phone -email']
+
+        } else {
+            queryKeys.user = req?.user?._id as string
+            populatePath = ['user_to', 'issue',]
+            selectFields = ['name img', '-phone -email']
+
+        }
+    }
+
 
     const result = await quoted_service.get_all(queryKeys, searchKeys, populatePath, selectFields, modelSelect)
     return sendResponse(
