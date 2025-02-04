@@ -4,7 +4,7 @@ import { IReview } from "./review_type";
 const review_schema = new Schema<IReview>({
     user: {
         type: Schema.Types.ObjectId,
-        ref: 'user',
+        ref: 'auth',
         required: [true, 'user id is required']
     },
     description: {
@@ -24,7 +24,7 @@ const review_schema = new Schema<IReview>({
         validate: [
             {
                 validator: function (this: IReview) {
-                    return this.review_for === 'SERVICE' && this.issue !== null;
+                    return this.issue !== null;
                 },
                 message: 'issue id is required'
             }
@@ -40,7 +40,7 @@ const review_schema = new Schema<IReview>({
         validate: [
             {
                 validator: function (this: IReview) {
-                    return this.review_for === 'SERVICE' && this.business !== null;
+                    return this.business !== null;
                 },
                 message: 'business id is required'
             }

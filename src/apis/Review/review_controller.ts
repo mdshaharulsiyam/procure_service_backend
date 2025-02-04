@@ -8,6 +8,9 @@ async function create(req: Request, res: Response) {
 
     req.body.user = req?.user?._id
 
+    const img = !Array.isArray(req.files) && req.files?.img && req.files.img.length > 0 && req.files.img?.map((doc: any) => doc.path) || null;
+    if (img) req.body.img = img
+
     const result = await review_service.create(req?.body)
 
     sendResponse(
