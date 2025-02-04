@@ -5,7 +5,9 @@ import { review_service } from "./review_service";
 import { SearchKeys } from "../../utils/Queries";
 
 async function create(req: Request, res: Response) {
+
     req.body.user = req?.user?._id
+
     const result = await review_service.create(req?.body)
 
     sendResponse(
