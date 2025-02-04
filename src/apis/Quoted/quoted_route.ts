@@ -11,4 +11,4 @@ quoted_router
 
     .get('/quoted/get-all', asyncWrapper(quoted_controller.get_quote))
 
-    .patch('/quoted/update/:id', verifyToken(config.USER), asyncWrapper(quoted_controller.update_quote_status))
+    .patch('/quoted/update-status/:id', verifyToken(config.USER), asyncWrapper(quoted_controller.update_quote_status))

@@ -15746,3 +15746,419 @@ src/apis/Purchase/purchase_controller.ts(28,5): error TS1005: ':' expected.
     at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1313:32)
     at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:13:04 [ERROR]: ReferenceError: quoted_router is not defined
+    at routeMiddleware (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/middleware/routeMiddleware.ts:26:13)
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/index.ts:38:16)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-02-03 21:16:57 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(41,11): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:17:04 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(40,5): error TS1110: Type expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:17:40 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,15): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:17:47 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,15): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:17:50 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,15): error TS1003: Identifier expected.
+src/apis/Quoted/quoted_controller.ts(42,33): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:17:51 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,15): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:17:54 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,5): error TS1434: Unexpected keyword or identifier.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:20:29 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,32): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:20:31 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,32): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:20:39 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,32): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:20:41 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,36): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:20:45 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,43): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:20:52 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,60): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:22:52 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_model.ts(12,5): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_model.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:22:55 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_model.ts(12,5): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_model.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:22:57 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_model.ts(12,5): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_model.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:23:00 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_model.ts(14,5): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_model.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:25:38 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(41,9): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:25:52 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(43,5): error TS1005: '(' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:25:53 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,5): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:26:06 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(42,23): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:26:18 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(45,5): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:27:36 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(52,44): error TS1011: An element access expression should take an argument.
+src/apis/Quoted/quoted_controller.ts(52,46): error TS1005: ';' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:27:50 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_controller.ts(57,44): error TS1011: An element access expression should take an argument.
+src/apis/Quoted/quoted_controller.ts(57,46): error TS1005: ';' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:33:48 [ERROR]: ReferenceError: status is not defined
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_model.ts:31:5)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:42:11 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_service.ts(53,90): error TS1005: ':' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:42:26 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_service.ts(53,95): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:42:34 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_service.ts(53,121): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:42:59 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_service.ts(53,32): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:43:48 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_service.ts(53,23): error TS1005: ')' expected.
+src/apis/Quoted/quoted_service.ts(53,34): error TS1005: ';' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-03 21:44:07 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Quoted/quoted_service.ts(93,3): error TS1160: Unterminated template literal.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Quoted/quoted_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-2750744730608641.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-2750744730608641.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-2750744730608641.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)

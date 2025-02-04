@@ -5,10 +5,14 @@ const quoted_schema = new Schema<IQuoted>({
 
     user: {
         type: Schema.Types.ObjectId,
-        ref: 'user',
+        ref: 'auth',
         required: true
     },
-
+    user_to: {
+        type: Schema.Types.ObjectId,
+        ref: 'auth',
+        required: true
+    },
     description: {
         type: String,
         required: [true, 'description is required']
@@ -23,10 +27,15 @@ const quoted_schema = new Schema<IQuoted>({
         type: Schema.Types.ObjectId,
         ref: 'issue',
         required: [true, 'issue id is required']
-    }
+    },
+    status: {
+        type: String,
+        enum: ['open', 'connected', 'closed', 'cancelled'],
+        default: 'open'
+    },
 
 }, { timestamps: true });
 
 quoted_schema.index({ issue: 1, user: 1 }, { unique: true })
 
-export const quoted_model = model<IQuoted>('quoted', quoted_schema);
+export const quoted_model = model<IQuoted>('quote', quoted_schema);
