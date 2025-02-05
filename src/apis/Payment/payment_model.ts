@@ -18,7 +18,6 @@ const payment_schema = new Schema<IPayment>({
         required() {
             return this.status === true;
         },
-        unique: true
     },
     status: {
         type: Boolean,
