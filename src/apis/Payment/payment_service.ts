@@ -4,6 +4,7 @@ import { payment_model } from "./payment_model";
 import auth_model from "../Auth/auth_model";
 import config from "../../DefaultConfig/config";
 import { IPayment } from "./payment_type";
+import { notification_model } from "../Notifications/notification_model";
 
 async function calculate_amount(price_data: IPaymentData[]) {
     return price_data ? price_data.reduce((total, item) => {
@@ -28,6 +29,7 @@ async function success_payment(data: { status: boolean, transaction_id: string }
     try {
         const result = await session.withTransaction(async () => {
             const is_exists_payment = await payment_model.findOne({ session_id })
+
             if (!is_exists_payment) throw new Error(`payment not found`)
 
             const [result] = await Promise.all([
@@ -36,7 +38,20 @@ async function success_payment(data: { status: boolean, transaction_id: string }
                         ...data
                     }
                 }, { session }),
-                auth_model.findByIdAndUpdate(is_exists_payment?.user, { $inc: { credits: is_exists_payment?.amount * config.CREDITS_PER_DOLLAR } }, { session })
+                auth_model.findByIdAndUpdate(is_exists_payment?.user, { $inc: { credits: is_exists_payment?.amount * config.CREDITS_PER_DOLLAR } }, { session }),
+                
+                notification_model.insertMany([
+                    {
+                        user: is_exists_payment?.user,
+                        title: 'payment success',
+                        message: `payment of $${is_exists_payment?.amount} is success`,
+                    },
+                    {
+                        user: is_exists_payment?.user,
+                        title: 'credit added',
+                        message: `you have added $${is_exists_payment?.amount * config.CREDITS_PER_DOLLAR} credits`,
+                    }
+                ], { session })
             ])
             return result
 

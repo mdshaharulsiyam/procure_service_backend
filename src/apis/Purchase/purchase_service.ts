@@ -6,6 +6,7 @@ import { IIssue } from "../Issues/issue_type"
 import { purchase_model } from "./purchase_model"
 import auth_model from "../Auth/auth_model"
 import Queries, { QueryKeys, SearchKeys } from "../../utils/Queries"
+import { notification_model } from "../Notifications/notification_model"
 
 async function create(data: { [key: string]: string }, auth: IAuth) {
 
@@ -35,7 +36,12 @@ async function create(data: { [key: string]: string }, auth: IAuth) {
         const result = await session.withTransaction(async () => {
             const [result] = await Promise.all([
                 purchase_model.insertMany({ ...data, user: auth?._id }, { session }),
-                auth_model.updateOne({ email: auth?.email }, { $inc: { credits: -Number(quote_price?.quote_price) } }, { session })
+                auth_model.updateOne({ email: auth?.email }, { $inc: { credits: -Number(quote_price?.quote_price) } }, { session }),
+                notification_model.insertMany({
+                    user: is_exist_issue?.user,
+                    title: 'credits deducted',
+                    message: `your credit has been deducted by ${quote_price?.quote_price} for purchasing issue}`,
+                }, { session })
             ])
 
             return result
