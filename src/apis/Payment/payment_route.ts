@@ -2,26 +2,11 @@ import express from "express";
 import asyncWrapper from "../../middleware/asyncWrapper";
 import verifyToken from "../../middleware/verifyToken";
 import config from "../../DefaultConfig/config";
+import { payment_controller } from "./payment_controller";
 export const paymentRoute = express.Router()
 paymentRoute
-    .post('/payment/create', verifyToken(config.USER),)
+    .post('/payment/create', verifyToken(config.USER), asyncWrapper(payment_controller.create))
 
-    .get('/payment/cancel',)
+    .get('/payment/cancel', asyncWrapper(payment_controller.cancel))
 
-    .get('/payment/success',)
-
-    .post('/payment/refund',)
-
-    .post('/payment/connect-stripe',)
-
-    .get('/payment/success-account/:id',)
-
-    .get('/payment/refreshAccountConnect/:id',)
-
-    .post('/payment/maid-payment',)
-
-    .post('/payment/transfer',)
-
-    .patch('/payment/check',)
-
-    .get('/payment/get-all',)
+    .get('/payment/success', asyncWrapper(payment_controller.success))
