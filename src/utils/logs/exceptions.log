@@ -18542,3 +18542,552 @@ src/DefaultConfig/config.ts(27,1): error TS1135: Argument expression expected.
     at require.extensions.<computed> (/tmp/ts-node-dev-hook-39540558472339216.js:71:20)
     at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
     at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-02-04 22:53:01 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Payment/payment_controller.ts(55,12): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Payment/payment_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:53:03 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Payment/payment_controller.ts(55,13): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Payment/payment_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:58:32 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(38,21): error TS1136: Property assignment expected.
+src/apis/Overview/overview_service.ts(41,30): error TS1005: ',' expected.
+src/apis/Overview/overview_service.ts(45,17): error TS1005: ',' expected.
+src/apis/Overview/overview_service.ts(46,13): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(46,14): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(49,50): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(53,9): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(53,10): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(54,5): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(54,6): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(63,1): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:58:34 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(46,13): error TS1005: ',' expected.
+src/apis/Overview/overview_service.ts(46,14): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(49,50): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(53,9): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(53,10): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(54,5): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(54,6): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(63,1): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:58:35 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(41,21): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:58:39 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(39,32): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:58:45 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(39,39): error TS1005: ',' expected.
+src/apis/Overview/overview_service.ts(39,49): error TS1005: ':' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:58:58 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(39,67): error TS1005: ',' expected.
+src/apis/Overview/overview_service.ts(39,83): error TS1005: ':' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:59:00 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(39,64): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 22:59:52 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(15,17): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:37:30 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(73,9): error TS1136: Property assignment expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:38:18 [ERROR]: /home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:80
+        const userGrougth;
+              ^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1512:18)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1534:20)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:38:25 [ERROR]: /home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:80
+        const userGrowth;
+              ^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (node:internal/modules/cjs/loader:1512:18)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1534:20)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:38:26 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(71,5): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:44:42 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(62,34): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:45:15 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(67,30): error TS1136: Property assignment expected.
+src/apis/Overview/overview_service.ts(67,34): error TS1109: Expression expected.
+src/apis/Overview/overview_service.ts(68,17): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(69,13): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(70,9): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(70,10): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(71,5): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(71,6): error TS1128: Declaration or statement expected.
+src/apis/Overview/overview_service.ts(99,1): error TS1128: Declaration or statement expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:45:22 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(67,40): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:45:54 [ERROR]: /home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:22
+        const [user, professionals, total_earning, earning, users, user] = yield Promise.all([
+                                                                   ^
+
+SyntaxError: Identifier 'user' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1512:18)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1534:20)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:45:56 [ERROR]: /home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:22
+        const [user, professionals, total_earning, earning, users, user] = yield Promise.all([
+                                                                   ^
+
+SyntaxError: Identifier 'user' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1512:18)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1534:20)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:46:45 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(75,17): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:46:50 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(74,30): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:46:53 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(74,30): error TS1005: ',' expected.
+src/apis/Overview/overview_service.ts(75,17): error TS1005: ':' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:46:54 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(74,31): error TS1005: ',' expected.
+src/apis/Overview/overview_service.ts(74,45): error TS1005: ':' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:46:57 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(74,31): error TS1005: ',' expected.
+src/apis/Overview/overview_service.ts(75,17): error TS1005: ':' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:47:48 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(80,17): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:48:00 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(81,17): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:48:07 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(80,40): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:49:35 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(112,9): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:49:38 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(112,9): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:49:41 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(111,32): error TS1011: An element access expression should take an argument.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:49:47 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(112,9): error TS1005: ':' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:49:50 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(112,9): error TS1005: ':' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:49:57 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(112,9): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:50:03 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(113,5): error TS1109: Expression expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:50:08 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_service.ts(112,10): error TS1005: ',' expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:52:28 [ERROR]: /home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:22
+        const current_year_user = year_user ? Number(year_user) : new Date().getFullYear();
+              ^
+
+SyntaxError: Identifier 'current_year_user' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1512:18)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1534:20)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:52:30 [ERROR]: /home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_service.ts:22
+        const current_year_user = year_user ? Number(year_user) : new Date().getFullYear();
+              ^
+
+SyntaxError: Identifier 'current_year_user' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1512:18)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1534:20)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:53:26 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_controller.ts(7,102): error TS1003: Identifier expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+2025-02-04 23:53:34 [ERROR]: Error: ⨯ Unable to compile TypeScript:
+src/apis/Overview/overview_controller.ts(7,117): error TS1110: Type expected.
+
+    at Object.<anonymous> (/home/shaharulsiyam/Desktop/project/backend/procure_backend/src/apis/Overview/overview_controller.ts:1:7)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1562:14)
+    at Module._compile (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/source-map-support/source-map-support.js:568:25)
+    at Module.m._compile (/tmp/ts-node-dev-hook-7926405066997033.js:69:33)
+    at node:internal/modules/cjs/loader:1699:10
+    at require.extensions..jsx.require.extensions..js (/tmp/ts-node-dev-hook-7926405066997033.js:114:20)
+    at require.extensions.<computed> (/tmp/ts-node-dev-hook-7926405066997033.js:71:20)
+    at Object.nodeDevHook [as .ts] (/home/shaharulsiyam/Desktop/project/backend/procure_backend/node_modules/ts-node-dev/lib/hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)

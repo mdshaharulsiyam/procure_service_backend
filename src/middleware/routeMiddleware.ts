@@ -12,6 +12,8 @@ import { review_router } from '../apis/Review/review_route';
 import { quoted_router } from '../apis/Quoted/quoted_route';
 import { notification_router } from '../apis/Notifications/notification_route';
 import { setting_router } from '../apis/Setting/setting_router';
+import { overview_router } from '../apis/Overview/overview_route';
+import { payment_route } from '../apis/Payment/payment_route';
 
 
 
@@ -29,5 +31,7 @@ export const routeMiddleware = (app: Express) => {
     app.use(quoted_router)
     app.use(notification_router)
     app.use(setting_router)
+    app.use(overview_router)
+    app.use(payment_route)
 
 }
